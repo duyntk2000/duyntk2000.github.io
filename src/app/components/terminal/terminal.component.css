@@ -1,0 +1,41 @@
+.terminal {
+background: #0d0d0d;
+color: #00ffae;
+font-family: 'Fira Code', monospace;
+padding: 1rem;
+border-radius: 8px;
+height: 90vh;
+margin:auto;
+width: 90vw;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+box-shadow: inset 0 0 10px #00ffae33;
+font-size: 20px;
+}
+.terminal-log {
+flex-grow: 1;
+overflow-y: auto;
+margin-bottom: 1rem;
+}
+.terminal-input {
+display: flex;
+align-items: center;
+}
+.prompt {
+margin-right: 0px;
+font-size: 20px;
+}
+input {
+flex: 1;
+background: transparent;
+border: none;
+outline: none;
+color: #00ffae;
+font-family: inherit;
+font-size: 20px;
+padding: 0px;
+}
+.log {
+margin-bottom: 1rem;
+}

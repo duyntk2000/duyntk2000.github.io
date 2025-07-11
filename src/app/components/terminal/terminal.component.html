@@ -1,0 +1,17 @@
+<div class="terminal" (click)="focusInput()">
+    <div class="terminal-log">
+      <div *ngFor="let entry of log" class="log">{{ entry }}</div>
+      <div class="terminal-input">
+        <span class="prompt">$</span>
+        <input
+          #commandInput
+          [(ngModel)]="currentCommand"
+          (keyup.enter)="executeCommand()"
+          (keydown)="scrollCommand($event)"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+    
+</div>
+  
