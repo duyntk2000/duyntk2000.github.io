@@ -181,51 +181,6 @@
     </mat-card>
   </section>
 
-  <section id="skills">
-    <h2>> {{'portfolio.skills.name' | translate}}</h2>
-    <mat-tab-group animationDuration="0ms">
-      <mat-tab label="{{'portfolio.cyber' | translate}}">
-        <ul>
-          <li>{{'portfolio.skills.list.cyber.0' | translate}}</li>
-          <li>{{'portfolio.skills.list.cyber.1' | translate}}</li>
-          <li>{{'portfolio.skills.list.cyber.2' | translate}}</li>
-          <li>{{'portfolio.skills.list.cyber.3' | translate}}</li>
-        </ul>
-      </mat-tab>
-      <mat-tab label="{{'portfolio.web' | translate}}">
-        <ul>
-          <li>{{'portfolio.skills.list.web.0' | translate}}</li>
-          <li>{{'portfolio.skills.list.web.1' | translate}}</li>
-          <li>{{'portfolio.skills.list.web.2' | translate}}</li>
-          <li>{{'portfolio.skills.list.web.3' | translate}}</li>
-          <li>{{'portfolio.skills.list.web.4' | translate}}</li>
-        </ul>
-      </mat-tab>
-      <mat-tab label="{{'portfolio.soft' | translate}}">
-        <div class="softskills">
-          <div>
-            <ul>
-              <li>{{'portfolio.skills.list.soft.0' | translate}}</li>
-              <li>{{'portfolio.skills.list.soft.1' | translate}}</li>
-              <li>{{'portfolio.skills.list.soft.2' | translate}}</li>
-              <li>{{'portfolio.skills.list.soft.3' | translate}}</li>
-              <li>{{'portfolio.skills.list.soft.4' | translate}}</li>
-            </ul>
-            <a href="https://op.gg/lol/summoners/euw/t%C3%AAn%20n%C3%A0o%20cx%20ko%20dc-1204?queue_type=SOLORANKED" target="_blank" rel="noreferrer">Proof</a>
-          </div>
-          <div>
-            <ul>
-              <li>English: TOEIC 940</li>
-              <li>French: DELF B2</li>
-              <li>Vietnamese: Native</li>
-            </ul>
-            <a style="text-decoration: underline;" (click)="switchLanguage('')">Proof</a>
-          </div>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
-  </section>
-
   <section id="projects">
     <h2>> {{'portfolio.projects.name' | translate}}</h2>
     <div class="projects-list">
@@ -297,6 +252,51 @@
         </mat-card-footer>
       </mat-card>
     </div>
+  </section>
+
+  <section id="skills">
+    <h2>> {{'portfolio.skills.name' | translate}}</h2>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="{{'portfolio.cyber' | translate}}">
+        <ul>
+          <li>{{'portfolio.skills.list.cyber.0' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.1' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.2' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.3' | translate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="{{'portfolio.web' | translate}}">
+        <ul>
+          <li>{{'portfolio.skills.list.web.0' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.1' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.2' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.3' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.4' | translate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="{{'portfolio.soft' | translate}}">
+        <div class="softskills">
+          <div>
+            <ul>
+              <li>{{'portfolio.skills.list.soft.0' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.1' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.2' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.3' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.4' | translate}}</li>
+            </ul>
+            <a href="https://op.gg/lol/summoners/euw/t%C3%AAn%20n%C3%A0o%20cx%20ko%20dc-1204?queue_type=SOLORANKED" target="_blank" rel="noreferrer">Proof</a>
+          </div>
+          <div>
+            <ul>
+              <li>English: TOEIC 940</li>
+              <li>French: DELF B2</li>
+              <li>Vietnamese: Native</li>
+            </ul>
+            <a style="text-decoration: underline;" (click)="switchLanguage('')">Proof</a>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
   </section>
 
   <section id="interests">
