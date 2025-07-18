@@ -1,0 +1,131 @@
+{
+    "portfolio" : {
+        "intro": "Hi, I'm Khanh Duy",
+        "title": "Cybersecurity Enthusiast | Web Developer | Always learning, always breaking (then fixing)",
+        "contact": "Contact",
+        "notme": "-Not me-",
+        "about": {
+            "name": "About",
+            "intro": "Hello! I’m Khanh Duy Nguyen Tu, a passionate Cybersecurity enthusiast and aspiring Pentester with a strong foundation in computer science, hands-on experience in binary security research, and a side gig as a freelance Web Developer. I enjoy building secure, user-focused web applications while deepening my skills in offensive security. My journey in tech is driven by curiosity, continuous learning, and a desire to contribute to systems that are both functional and secure. I thrive in collaborative, challenge-driven environments-whether it’s fuzzing binaries, exploring CTFs, or delivering fullstack solutions to clients."
+        },
+        "education": {
+            "name": "Education",
+            "master": "Master of Cybersecurity",
+            "master-school": "University of Rennes 1, France",
+            "bachelor": "Bachelor of Computer Science",
+            "bachelor-school": "University of Caen, France"
+        },
+        "experience": {
+            "name": "Experience",
+            "list": [
+                {
+                    "company": "SAS KALI, France",
+                    "job": "Web Developer - Freelance",
+                    "time": "Nov 2024 - Present",
+                    "task": [
+                        "Creation of UX/UI-optimized responsive interfaces for mobile and desktop devices",
+                        "Backend development (RESTful API, Node.js, PHP) and WordPress integration",
+                        "Optimization of loading times by up to 40% through integration of SEO and performance best practices (Lazy loading, minification, CDN)",
+                        "Clients : "
+                    ]
+                },
+                {
+                    "company": "STMicroelectronics,  France",
+                    "job": "Software security - Intern",
+                    "time": "Apr - Sep 2024",
+                    "task": [
+                        "Designed and implemented a custom binary sanitizer (C/C++) for ARM-Thumb binaries, improving detection of memory violations by 60–70%",
+                        "Integrated AFL-Unicorn to optimize binary fuzzing pipeline",
+                        "Fixed critical persistent bug in AFL-Unicorn allowing new exploitation method",
+                        "Conducted research of state-of-the-art binary sanitizer"
+                    ]
+                },
+                {
+                    "company": "Molnix,  Finland",
+                    "job": "Backend Developer - Intern",
+                    "time": "Apr - Jun 2022",
+                    "task": [
+                        "REST API development in Laravel",
+                        "MySQL database management",
+                        "Writing technical documentation to reduce onboarding time for new developers"
+                    ]
+                }
+            ]
+        },
+        "skills": {
+            "name": "Skills",
+            "list": {
+                "cyber": [
+                    "SOC : Wireshark, Snort, Yara, ELK, Splunk",
+                    "Pentest : Metasploit, Nmap, Burp Suite, Bloodhound, AFL-Unicorn",
+                    "Reverse Engineering : Ghidra, Static/Dynamic analysis",
+                    "OS : Windows, Linux (Kali, Ubuntu)"
+                ],
+                "web": [
+                    "Programming : C/C++, Python, Javascript, PHP",
+                    "Frameworks : Angular, Laravel, Node.js, Express",
+                    "CMS : WordPress",
+                    "Database : MySQL, PostgreSQL",
+                    "DevOps : Git, Docker, Apache, Nginx"
+                ],
+                "soft": [
+                    "Autonomous / Teamwork",
+                    "Hard working",
+                    "Stress management",
+                    "Adaptability",
+                    "Problem-solving"
+                ]
+            }
+        },
+        "projects": {
+            "name": "Projects",
+            "list": [
+                {
+                    "name": "YudSan",
+                    "des": "Address Sanitizer for ARM-Thumb binary"
+                },
+                {
+                    "name": "CyberSous-Chef",
+                    "des": "An apprentice of CyberChef"
+                },
+                {
+                    "name": "Mini IRC Chat",
+                    "des": "IRC chat client/server with E2E encryption"
+                },
+                {
+                    "name": "Finding Cryptographic Failures",
+                    "des": "Using Semgrep to search for incorrect implementation of cryptographic"
+                },
+                {
+                    "name": "Membership Inference Attack (MIA) Analysis",
+                    "des": "Checking the relation between outlier-ness and difficulty for MIA"
+                }
+            ]
+        },
+        "interests": {
+            "name": "Interests",
+            "des": "Alongside studies and works, I actively strengthen my skills through plateforms like Rootme, HackTheBox, TryHackMe, CryptoHack",
+            "progress": "My current progression:",
+            "list": {
+                    "thm": "TryHackMe is an online cybersecurity training platform that offers hands-on labs and guided tutorials for learners of all levels. It covers a wide range of topics including penetration testing, SOC analyst, DevOps, and more. It's beginner-friendly, with interactive virtual machines, step-by-step tasks, and gamified learning paths.",
+                    "rootme":"Root-Me is a platform dedicated to cybersecurity challenges and CTF (Capture The Flag) exercises. It provides wide variety of challenges in fields like cryptography, steganography, web security, reverse engineering, and system exploitation.",
+                    "htb": "Hack The Box is a cybersecurity training platform designed for professionals and enthusiasts to practice hacking skills in realistic environments. It offers a wide range of vulnerable machines, labs, and scenarios ranging from beginner to expert levels.",
+                    "cryptohack": "CryptoHack is a educational platform focused exclusively on cryptography. It offers a collection of interactive, Python-based challenges that teach both the theory and practical application of modern cryptographic systems."
+            }
+        },
+        "cyber": "Cybersecurity",
+        "web": "Web Developer",
+        "soft": "Softskills/Languages",
+        "chips": {
+            "crypto": "Cryptography",
+            "threat": "Intrusion Detection System",
+            "system": "System",
+            "network": "Network",
+            "oop": "OOP",
+            "algo": "Algorithm",
+            "encode": "Encoding",
+            "static": "Static Analysis",
+            "outlier": "Outlier Detection"
+        }
+    }
+}
