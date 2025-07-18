@@ -1,0 +1,58 @@
+<div style="height: 500px; border: 1px solid black;">
+  <as-split direction="horizontal" restrictMove="true" cdkDropListGroup>
+    <as-split-area [size]="30">
+        <h3>Operations</h3>
+        <div
+            cdkDropList
+            [cdkDropListData]="operations"
+            cdkDropListSortingDisabled
+            class="drop-list operations"
+            (cdkDropListDropped)="drop_recipe($event)">
+            @for (item of operations; track item) {
+                <div class="example-box" 
+                    cdkDrag 
+                    (cdkDragStarted)="exited($event)" 
+                    (cdkDragReleased)="entered()"
+                    [cdkDragData]="item">
+                    {{item.name}}
+                </div>
+                <div class="example-box" *ngIf="transferringItem === item">
+                    {{item.name}}
+                </div>
+            }
+        </div>
+    </as-split-area>
+    <as-split-area [size]="30">
+        <h3>Recipe</h3>
+        <div
+            cdkDropList
+            [cdkDropListData]="recipe"
+            class="drop-list recipe"
+            (cdkDropListDropped)="drop($event)">
+            @for (item of recipe; track item) {
+                <div class="example-box" cdkDrag>{{item.name}}</div>
+            }
+        </div>
+    </as-split-area>
+    <as-split-area 
+        [size]="40" 
+        cdkDropList 
+        (cdkDropListDropped)="drop_recipe($event)"
+        >
+            <as-split direction="vertical" restrictMove="true">
+                <as-split-area [size]="50">
+                    <div class="pane">
+                        <h4>Input</h4>
+                        <textarea [(ngModel)]="inputText" (input)="runOperation()"></textarea>
+                    </div>
+                </as-split-area>
+                <as-split-area [size]="50">
+                    <div class="pane">
+                        <h4>Output</h4>
+                        <textarea [value]="outputText" readonly></textarea>
+                    </div>
+                </as-split-area>
+            </as-split>
+    </as-split-area>
+  </as-split>
+</div>

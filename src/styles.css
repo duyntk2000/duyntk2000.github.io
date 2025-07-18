@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 767px) {
+  .mat-content.mat-content-hide-toggle {
+    margin: 0px!important;
+    width: 100%!important;
+  }
+}
+mat-card-title-group div {
+  width: 80%;
+}
+body {
+  background-color: #1A1A2E;
+  margin: 0;
+  --mat-card-subtitle-text-color: #F7F0F0;
+  --mat-tab-header-active-hover-label-text-color: #36F1CD;
+  --mat-tab-header-active-focus-label-text-color: #36F1CD;
+  --mat-tab-header-active-label-text-color: #36F1CD;
+  --mat-tab-header-inactive-hover-label-text-color: #36F1CD;
+  --mat-tab-header-inactive-label-text-color: #F7F0F0;
+  --mat-tab-header-inactive-focus-label-text-color: #36F1CD;
+  --mat-expansion-header-text-color: #F15025;
+  --mat-expansion-container-background-color: #16213E;
+}
+

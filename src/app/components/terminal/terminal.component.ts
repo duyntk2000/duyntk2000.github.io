@@ -52,6 +52,10 @@ export class TerminalComponent implements AfterViewInit {
       case 'clear':
         this.log = [];
         break;
+      case 'projects':
+        this.log.push('See my work at <a href=\"/portfolio/projects\">/projects</a>')
+        this.log.push('1. <a href=\"/portfolio/cybersous-chef\">Cyber Sous-Chef</a>')
+        break;
       case 'whoami':
         this.log.push('Hi, I am Khanh Duy Nguyen Tu, a Cybersecurity Enthusiast with a side of Web Developper');
         break;

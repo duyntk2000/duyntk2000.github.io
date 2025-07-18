@@ -1,6 +1,6 @@
 <div class="terminal" (click)="focusInput()">
     <div class="terminal-log">
-      <div *ngFor="let entry of log" class="log">{{ entry }}</div>
+      <div *ngFor="let entry of log" class="log" [innerHTML]="entry"></div>
       <div class="terminal-input">
         <span class="prompt">$</span>
         <input

@@ -1,0 +1,63 @@
+.cyberchef-container {
+  display: flex;
+  height: 90vh;
+  font-family: monospace;
+}
+.sidebar {
+  width: 100%;
+  color: blue;
+  overflow-y: auto;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.sidebar li.active, .sidebar li:hover {
+  background-color: #00ffae;
+  color: #1e1e1e;
+}
+.pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+.pane textarea {
+  flex-grow: 1;
+  background-color: #1e1e1e;
+  color: #00ffae;
+  border: none;
+  padding: 0.5rem;
+  resize: none;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+as-split-area h3 {
+    height: 10%;
+    margin: 0;
+}
+.drop-list {
+    height: 90%;
+}
+
+.operations .cdk-drag-placeholder {
+    display: none;
+}

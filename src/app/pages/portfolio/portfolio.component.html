@@ -1,0 +1,429 @@
+<nav class="top-nav desktop">
+  <div class="nav-links">
+    <a>NTKD</a>
+  </div>
+  <div class="nav-links">
+    <a routerLink="." fragment="education">{{ 'portfolio.education.name' | translate }}</a>
+    <a routerLink="." fragment="experience">{{ 'portfolio.experience.name' | translate }}</a>
+    <a routerLink="." fragment="projects">{{ 'portfolio.projects.name' | translate }}</a>
+    <a routerLink="." fragment="skills">{{ 'portfolio.skills.name' | translate }}</a>
+    <a routerLink="." fragment="interests">{{ 'portfolio.interests.name' | translate }}</a>
+  </div>
+  <div class="lang-switch">
+    <button (click)="switchLanguage('en')">EN</button>
+    <button (click)="switchLanguage('fr')">FR</button>
+  </div>
+</nav>
+
+<mat-accordion class="mobile">
+  <mat-expansion-panel 
+    [expanded]="panelOpenState() === true" 
+    (opened)="panelOpenState.set(true)" 
+    (closed)="panelOpenState.set(false)" 
+    hideToggle="true" class="top-nav">
+    <mat-expansion-panel-header>
+      <mat-panel-title> 
+        <div class="nav-links">
+          <a routerLink="." fragment="about">NTKD</a>
+        </div> 
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon *ngIf="!panelOpenState()">menu</mat-icon>
+        <mat-icon *ngIf="panelOpenState()">close</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div (click)="panelOpenState.set(false)">
+      <div class="nav-links">
+        <a routerLink="." fragment="education">{{ 'portfolio.education.name' | translate }}</a>
+        <a routerLink="." fragment="experience">{{ 'portfolio.experience.name' | translate }}</a>
+        <a routerLink="." fragment="projects">{{ 'portfolio.projects.name' | translate }}</a>
+        <a routerLink="." fragment="skills">{{ 'portfolio.skills.name' | translate }}</a>
+        <a routerLink="." fragment="interests">{{ 'portfolio.interests.name' | translate }}</a>
+      </div>
+      <div class="lang-switch" style="text-align: center;">
+        <button (click)="switchLanguage('en')">EN</button>
+        <button (click)="switchLanguage('fr')">FR</button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<div class="page-container">
+  <header>
+    <h1>> {{'portfolio.intro' | translate}}</h1>
+    <h4>{{'portfolio.title' | translate}}</h4>
+    <div class="poem">
+      <p>" Roses are Red,<br>&nbsp;&nbsp;Violets are Blue<br><br>&nbsp;&nbsp;Unexpected '&#123;' on line 32 "</p>
+      <h5>{{'portfolio.notme' | translate}}</h5>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>> {{'portfolio.about.name' | translate}}</h2>
+    <p>{{'portfolio.about.intro' | translate}}</p>
+  </section>
+
+  <section id="education">
+    <h2>> {{'portfolio.education.name' | translate}}</h2>
+    <mat-card class="example-card" appearance="outlined" [class.mat-elevation-z8]="true">
+      <mat-card-header>
+        <mat-card-title>{{'portfolio.education.master' | translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{'portfolio.education.master-school' | translate}}</p>
+        <p>2022-2024</p>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="">
+          <mat-chip>{{'portfolio.chips.crypto' | translate}}</mat-chip>
+          <mat-chip>Pentest</mat-chip>
+          <mat-chip>Reverse Engineering</mat-chip>
+          <mat-chip>Machine Learning</mat-chip>
+          <mat-chip>{{'portfolio.chips.threat' | translate}}</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{'portfolio.education.bachelor' | translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{'portfolio.education.bachelor-school' | translate}}</p>
+        <p>2019-2022</p>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="">
+          <mat-chip>{{'portfolio.chips.system' | translate}}</mat-chip>
+          <mat-chip>{{'portfolio.chips.network' | translate}}</mat-chip>
+          <mat-chip>{{'portfolio.chips.oop' | translate}}</mat-chip>
+          <mat-chip>{{'portfolio.chips.algo' | translate}}</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+  </section>
+
+  <section id="experience">
+    <h2>> {{'portfolio.experience.name' | translate}}</h2>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{'portfolio.experience.list.0.job' | translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{'portfolio.experience.list.0.company' | translate}}</p>
+        <p>{{'portfolio.experience.list.0.time' | translate}}</p>
+        <ul>
+          <li>{{'portfolio.experience.list.0.task.0' | translate}}</li>
+          <li>{{'portfolio.experience.list.0.task.1' | translate}}</li>
+          <li>{{'portfolio.experience.list.0.task.2' | translate}}</li>
+          <li>{{'portfolio.experience.list.0.task.3' | translate}}
+            <a href="https://hypestore.fr" target="_blank" rel="noreferrer">hypestore.fr</a>, 
+            <a href="lsfmed.fr" target="_blank" rel="noreferrer">lsfmed.fr</a>, 
+            <a href="phuongbac.pl" target="_blank" rel="noreferrer">phuongbac.pl</a>, 
+            <a href="anspa.fr" target="_blank" rel="noreferrer">anspa.fr</a>
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="">
+          <mat-chip>Angular</mat-chip>
+          <mat-chip>Node.js</mat-chip>
+          <mat-chip>WordPress</mat-chip>
+          <mat-chip>PHP</mat-chip>
+          <mat-chip>MySQL</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{'portfolio.experience.list.1.job' | translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{'portfolio.experience.list.1.company' | translate}}</p>
+        <p>{{'portfolio.experience.list.1.time' | translate}}</p>
+        <ul>
+          <li>{{'portfolio.experience.list.1.task.0' | translate}}</li>
+          <li>{{'portfolio.experience.list.1.task.1' | translate}}</li>
+          <li>{{'portfolio.experience.list.1.task.2' | translate}}</li>
+          <li>{{'portfolio.experience.list.1.task.3' | translate}}</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="">
+          <mat-chip>AFL-Unicorn</mat-chip>
+          <mat-chip>Fuzzing</mat-chip>
+          <mat-chip>Emulation</mat-chip>
+          <mat-chip>Sanitizer</mat-chip>
+          <mat-chip>ARM</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{'portfolio.experience.list.2.job' | translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{'portfolio.experience.list.2.company' | translate}}</p>
+        <p>{{'portfolio.experience.list.2.time' | translate}}</p>
+        <ul>
+          <li>{{'portfolio.experience.list.2.task.0' | translate}}</li>
+          <li>{{'portfolio.experience.list.2.task.1' | translate}}</li>
+          <li>{{'portfolio.experience.list.2.task.2' | translate}}</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="">
+          <mat-chip>Laravel</mat-chip>
+          <mat-chip>MySQL</mat-chip>
+          <mat-chip>Postman</mat-chip>
+          <mat-chip>API</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+  </section>
+
+  <section id="skills">
+    <h2>> {{'portfolio.skills.name' | translate}}</h2>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="{{'portfolio.cyber' | translate}}">
+        <ul>
+          <li>{{'portfolio.skills.list.cyber.0' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.1' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.2' | translate}}</li>
+          <li>{{'portfolio.skills.list.cyber.3' | translate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="{{'portfolio.web' | translate}}">
+        <ul>
+          <li>{{'portfolio.skills.list.web.0' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.1' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.2' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.3' | translate}}</li>
+          <li>{{'portfolio.skills.list.web.4' | translate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="{{'portfolio.soft' | translate}}">
+        <div class="softskills">
+          <div>
+            <ul>
+              <li>{{'portfolio.skills.list.soft.0' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.1' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.2' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.3' | translate}}</li>
+              <li>{{'portfolio.skills.list.soft.4' | translate}}</li>
+            </ul>
+            <a href="https://op.gg/lol/summoners/euw/t%C3%AAn%20n%C3%A0o%20cx%20ko%20dc-1204?queue_type=SOLORANKED" target="_blank" rel="noreferrer">Proof</a>
+          </div>
+          <div>
+            <ul>
+              <li>English: TOEIC 940</li>
+              <li>French: DELF B2</li>
+              <li>Vietnamese: Native</li>
+            </ul>
+            <a style="text-decoration: underline;" (click)="switchLanguage('')">Proof</a>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </section>
+
+  <section id="projects">
+    <h2>> {{'portfolio.projects.name' | translate}}</h2>
+    <div class="projects-list">
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><a href='https://github.com/duyntk2000/yudsan' target='_blank' rel='noreferrer'>{{'portfolio.projects.list.0.name' | translate}}</a></mat-card-title>
+          <mat-card-subtitle>{{'portfolio.projects.list.0.des' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-footer class="example-card-footer">
+          <mat-chip-set aria-label="">
+            <mat-chip>Fuzzing</mat-chip>
+            <mat-chip>C/C++</mat-chip>
+            <mat-chip>Emulation</mat-chip>
+            <mat-chip>ARM-Thumb</mat-chip>
+            <mat-chip>Address Sanitizer</mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><a routerLink='/cybersous-chef' target='_blank' rel='noreferrer'>{{'portfolio.projects.list.1.name' | translate}}</a></mat-card-title>
+          <mat-card-subtitle>{{'portfolio.projects.list.1.des' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-footer class="example-card-footer">
+          <mat-chip-set aria-label="">
+            <mat-chip>Angular</mat-chip>
+            <mat-chip>{{'portfolio.chips.encode' | translate}}</mat-chip>
+            <mat-chip>{{'portfolio.chips.crypto' | translate}}</mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><a href='https://github.com/duyntk2000/mini-irc-chat' target='_blank' rel='noreferrer'>{{'portfolio.projects.list.2.name' | translate}}</a></mat-card-title>
+          <mat-card-subtitle>{{'portfolio.projects.list.2.des' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-footer class="example-card-footer">
+          <mat-chip-set aria-label="">
+            <mat-chip>Rust</mat-chip>
+            <mat-chip>{{'portfolio.chips.crypto' | translate}}</mat-chip>
+            <mat-chip>IRC</mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title>{{'portfolio.projects.list.3.name' | translate}}</mat-card-title>
+          <mat-card-subtitle>{{'portfolio.projects.list.3.des' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-footer class="example-card-footer">
+          <mat-chip-set aria-label="">
+            <mat-chip>Semgrep</mat-chip>
+            <mat-chip>{{'portfolio.chips.crypto' | translate}}</mat-chip>
+            <mat-chip>{{'portfolio.chips.static' | translate}}</mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title>{{'portfolio.projects.list.4.name' | translate}}</mat-card-title>
+          <mat-card-subtitle>{{'portfolio.projects.list.4.des' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-footer class="example-card-footer">
+          <mat-chip-set aria-label="Tasks">
+            <mat-chip>MIA</mat-chip>
+            <mat-chip>Machine Learning</mat-chip>
+            <mat-chip>{{'portfolio.chips.outlier' | translate}}</mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>> {{'portfolio.interests.name' | translate}}</h2>
+    <p>{{'portfolio.interests.des' | translate}}</p>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="TryHackMe">
+        <p>{{'portfolio.interests.list.thm' | translate}}</p>
+        <p><a href="https://tryhackme.com/p/duyntk2000" target="_blank" rel="noreferrer">{{'portfolio.interests.progress' | translate}}</a></p>
+        <div style="text-align: center;">
+          <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3971257" style='border:none;width:330px;height:88px;margin:auto;'></iframe>
+        </div>
+        <div>
+          <div class="thm-roadmap">
+            <div class="thm-path">
+              <p>Security Analyst</p>
+              <mat-card *ngFor="let road of thm_roadmap['left']" appearance="outlined" class="roadmap-card">
+                <mat-card-header>
+                  <mat-card-title-group>
+                    <mat-card-title>{{road.name}}</mat-card-title>
+                    <mat-card-subtitle>{{road.value}}%</mat-card-subtitle>
+                    <mat-progress-spinner 
+                      [ngClass]="road.value == 100 ? 'spinner_done' : 'spinner_notdone'"
+                      mode="determinate"
+                      [value]="road.value">
+                    </mat-progress-spinner>
+                  </mat-card-title-group>
+                </mat-card-header>
+              </mat-card>
+            </div>
+            <div class="thm-path">
+              <p>Penetration Tester</p>
+              <mat-card *ngFor="let road of thm_roadmap['center']" appearance="outlined" class="roadmap-card">
+                <mat-card-header>
+                  <mat-card-title-group>
+                    <mat-card-title>{{road.name}}</mat-card-title>
+                    <mat-card-subtitle>{{road.value}}%</mat-card-subtitle>
+                    <mat-progress-spinner 
+                      [ngClass]="road.value == 100 ? 'spinner_done' : 'spinner_notdone'"
+                      mode="determinate"
+                      [value]="road.value">
+                    </mat-progress-spinner>
+                  </mat-card-title-group>
+                </mat-card-header>
+              </mat-card>
+            </div>
+            <div class="thm-path">
+              <p>Security Engineer</p>
+              <mat-card *ngFor="let road of thm_roadmap['right']" appearance="outlined" class="roadmap-card">
+                <mat-card-header>
+                  <mat-card-title-group>
+                    <mat-card-title>{{road.name}}</mat-card-title>
+                    <mat-card-subtitle>{{road.value}}%</mat-card-subtitle>
+                    <mat-progress-spinner 
+                      [ngClass]="road.value == 100 ? 'spinner_done' : 'spinner_notdone'"
+                      mode="determinate"
+                      [value]="road.value">
+                    </mat-progress-spinner>
+                  </mat-card-title-group>
+                </mat-card-header>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Rootme">
+        <p>{{'portfolio.interests.list.rootme' | translate}}</p>
+        <p><a href="https://www.root-me.org/Nguyen-Tu-Khanh-Duy" target="_blank" rel="noreferrer">{{'portfolio.interests.progress' | translate}}</a></p>
+        <div style="display: flex; justify-content: space-evenly;">
+          <div *ngFor="let stat of rootme_stats['general']">
+            <p>{{stat.value}}</p>
+            <p>{{stat.name}}</p>
+          </div>
+        </div>
+        <div class="rootme-detail">
+          <div *ngFor="let detail of rootme_stats['details']" class="rootme-card">
+            <mat-accordion >
+              <mat-expansion-panel hideToggle disabled>
+                <mat-expansion-panel-header style="height: fit-content; padding: 2px;">
+                    <mat-panel-title style="display: unset; flex-grow: 3;">
+                      <h4>{{detail.name}}</h4>
+                      <p>{{detail.points}} points</p>
+                      <p>{{detail.done}}</p>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      <mat-progress-spinner 
+                        [ngClass]="detail.value == 100 ? 'spinner_done' : 'spinner_notdone'"
+                        mode="determinate"
+                        [value]="detail.value">
+                      </mat-progress-spinner>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="HackTheBox">
+        <p>{{'portfolio.interests.list.htb' | translate}}</p>
+        <p><a href="https://cryptohack.org/user/duyntk2000/" target="_blank" rel="noreferrer">{{'portfolio.interests.progress' | translate}}</a></p>
+        <div style="display: flex; justify-content: space-evenly;">
+          <div *ngFor="let stat of htb_stats['general']">
+            <p>{{stat.value}}</p>
+            <p>{{stat.name}}</p>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="CryptoHack">
+        <p>{{'portfolio.interests.list.cryptohack' | translate}}</p>
+        <p><a href="https://app.hackthebox.com/users/879573" target="_blank" rel="noreferrer">{{'portfolio.interests.progress' | translate}}</a></p>
+        <div style="display: flex; justify-content: space-evenly;">
+          <div *ngFor="let stat of cryptohack_stats['general']">
+            <p>{{stat.value}}</p>
+            <p>{{stat.name}}</p>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </section>
+  <mat-icon class="scroll-top" (click)="scrollToTop()" *ngIf="showScrollTop">
+    arrow_drop_up
+  </mat-icon>
+  <footer>
+    <p>root&#64;khanhduy:~#
+      <a href="https://github.com/duyntk2000" target="_blank" rel="noreferrer">GitHub</a> • 
+      <a href="https://www.linkedin.com/in/khanh-duy-nguyen-tu-6a1545124/" target="_blank" rel="noreferrer">LinkedIn</a> • 
+      <a href="mailto:nguyentukhanhduy@gmail.com">nguyentukhanhduy&#64;gmail.com</a>
+    </p>
+  </footer>
+</div>

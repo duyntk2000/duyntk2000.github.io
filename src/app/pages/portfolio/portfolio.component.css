@@ -1,0 +1,271 @@
+@media (min-width: 768px) {
+  .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #16213E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    z-index: 1000;
+    font-family: 'Fira Code', monospace;
+    height: 5vh;
+    color: #F7F0F0;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .top-nav {
+    position: fixed;
+    background-color: #16213E;
+    z-index: 1000;
+    font-family: 'Fira Code', monospace;
+    color: #F7F0F0;
+    width: 100%;
+    border-radius: 0%!important;
+    --mat-expansion-header-expanded-state-height: 48px;
+  }
+  .nav-links {
+    display: grid;
+    width: 50%;
+  }
+  .top-nav mat-panel-description {
+    justify-content: end;
+    margin: 0;
+    --mat-icon-color: #F7F0F0;
+  }
+  mat-icon:hover {
+    --mat-icon-color: #36F1CD;
+  }
+  .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled="true"]):hover {
+    background: #16213E!important;
+  }
+}
+
+@media (max-width: 480px) {
+  .thm-roadmap {
+    grid-template-columns: 1fr!important;
+  }
+  .rootme-detail {
+    grid-template-columns: 1fr!important;
+  }
+  .projects-list {
+    grid-template-columns: 1fr!important;
+  }
+  .roadmap-card mat-progress-spinner {
+    width: 40px!important;
+    height: 40px!important;
+  }
+  .rootme-card mat-progress-spinner {
+    width: 40px!important;
+    height: 40px!important;
+  }
+}
+
+@media (min-width: 481px) {
+  .rootme-card mat-progress-spinner {
+    width: 5vw!important;
+    height: 5vw!important;
+  }
+  .roadmap-card mat-progress-spinner {
+    width: 4vw!important;
+    height: 4vw!important;
+  }
+}
+
+a {
+  color: #F7F0F0;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #36F1CD!important;
+}
+
+.top-nav .nav-links a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-nav .lang-switch button {
+  background: transparent;
+  border: 1px solid #36F1CD;
+  color: #36F1CD;
+  padding: 0.25rem 0.75rem;
+  margin-left: 0.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.top-nav .lang-switch button:hover {
+  background-color: #36F1CD;
+  color: #16213E;
+}
+
+.page-container {
+  font-family: 'Fira Code', monospace;
+  background-color: #1A1A2E;
+  color: #F7F0F0;
+  width: 90%;
+  margin: auto;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header {
+  color: #36F1CD;
+  padding-top: 10vh;
+  height: 100vh;
+}
+header h4 {
+  color: #F7F0F0;
+}
+.poem {
+  width: fit-content;
+  margin: 10vh auto;
+}
+.poem p {
+  font-size: 2em;
+  color: #F15025;
+}
+.poem h5 {
+  text-align: end;
+}
+section:not(#about) {
+  padding-top: 10vh;
+}
+h2 {
+  color: #36F1CD;
+}
+mat-chip {
+  --mdc-chip-label-text-color: #36F1CD;
+  border-color: #F15025;
+}
+.project-card {
+  background-color: #1A1A2E;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.badge {
+  background-color: #1A1A2E;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+.timeline p {
+  margin: 0.25rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+.thm-roadmap {
+  display: flex;
+}
+.rootme-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.rootme-card {
+  margin: 1vh 0;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+}
+mat-card {
+  --mdc-outlined-card-container-color: #16213E;
+  border: none;
+}
+.rootme-card mat-panel-description {
+    justify-content: end;
+    margin: 0;
+    flex-grow: 1;
+}
+.rootme-card h4 {
+  color: #F15025;
+  margin: 2px;
+  font-family: 'Fira Code', monospace;
+}
+#interests div p {
+  color: #F7F0F0;
+  margin: 2px;
+  font-family: 'Fira Code', monospace;
+  font-weight: normal;
+}
+.spinner_done { 
+  --mdc-circular-progress-active-indicator-color: #36F1CD!important; 
+}
+
+.spinner_notdone { 
+  --mdc-circular-progress-active-indicator-color: #F7F0F0!important; 
+}
+
+.roadmap-card {
+  width: 85%;
+  margin: 1em auto;
+}
+.thm-roadmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+mat-card-title, mat-card-title a {
+  --mat-card-title-text-size: 1em;
+  color: #F15025;
+}
+.thm-path p {
+  text-align: center;
+}
+.roadmap-card mat-card-header {
+  padding: 2%;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects-list mat-card {
+  margin: 1em 5%;
+}
+mat-card-footer {
+  padding: 16px 16px 0
+}
+.mat-mdc-chip-set .mdc-evolution-chip-set__chips {
+  margin-left: 0px;
+}
+.softskills {
+  display: flex;
+  justify-content: space-around;
+}
+#education mat-card, #experience mat-card {
+  margin: 1vh 0;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #16213E;
+  border: 1px solid #00ffae;
+  color: #00ffae;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+.scroll-top:hover {
+  background-color: #00ffae;
+  color: #16213E;
+}
