@@ -13,6 +13,9 @@ html {
 mat-card-title-group div {
   width: 80%;
 }
+h3 {
+  color: #36F1CD;
+}
 body {
   background-color: #1A1A2E;
   margin: 0;
