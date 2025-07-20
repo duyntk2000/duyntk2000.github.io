@@ -43,7 +43,7 @@ export class PortfolioComponent {
   navOpen = false;
   thm_roadmap = {
     "left" : [
-      {"name" : "SOC Level 1" , "value" : 76},
+      {"name" : "SOC Level 1" , "value" : 100},
       {"name" : "SOC Level 2" , "value" : 0},
       {"name" : "Advanced Endpoint Investigation" , "value" : 3},
       {"name" : "Defending Azure" , "value" : 0},
