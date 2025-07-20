@@ -28,6 +28,9 @@ export class CybersousChefComponent {
     { name: 'From Base64', action: (str: string) => this.encodingService.from_base64(str)},
     { name: 'Reverse Text', action: (str: string) => this.encodingService.reverse_str(str)},
     { name: 'Defang IP', action: (str: string) => this.encodingService.defang_ip(str)},
+    { name: 'Defang URL', action: (str: string) => this.encodingService.defang_url(str)},
+    { name: 'To Hex', action: (str: string) => this.encodingService.to_hex(str)},
+    { name: 'From Hex', action: (str: string) => this.encodingService.from_hex(str)},
   ];
 
   recipe: Operation[] = [
