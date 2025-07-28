@@ -51,7 +51,7 @@ export class PortfolioComponent {
     "center" : [
       {"name" : "Jr Penetration Tester" , "value" : 100},
       {"name" : "Web Fundamentals" , "value" : 100},
-      {"name" : "Web Application Pentesting" , "value" : 3},
+      {"name" : "Web Application Pentesting" , "value" : 58},
       {"name" : "Red Teaming" , "value" : 2},
     ],
     "right" : [
@@ -62,9 +62,9 @@ export class PortfolioComponent {
   };
   rootme_stats = {
     "general" : [
-      {"name" : "Position", "value" : 3956},
-      {"name" : "Points", "value" : 2675},
-      {"name" : "Challenges", "value" : 151},
+      {"name" : "Position", "value" : 3073},
+      {"name" : "Points", "value" : 3185},
+      {"name" : "Challenges", "value" : 163},
     ],
     "details" : [
       {"name" : "App - Script", "points" : 235, "done" : "13 / 33", "value" : 39},
@@ -75,14 +75,14 @@ export class PortfolioComponent {
       {"name" : "Programming", "points" : 250, "done" : "11 / 29", "value" : 38},
       {"name" : "Realist", "points" : 10, "done" : "1 / 60", "value" : 2},
       {"name" : "Network", "points" : 160, "done" : "13 / 35", "value" : 37},
-      {"name" : "Web - Client", "points" : 275, "done" : "14 / 42", "value" : 33},
-      {"name" : "Web - Server", "points" : 425, "done" : "26 / 97", "value" : 27},
+      {"name" : "Web - Client", "points" : 770, "done" : "25 / 42", "value" : 60},
+      {"name" : "Web - Server", "points" : 440, "done" : "27 / 97", "value" : 28},
       {"name" : "Steganography", "points" : 95, "done" : "8 / 24", "value" : 33},
     ]
   };
   htb_stats = {
     "general" : [
-      {"name" : "Global Ranking", "value" : 920},
+      {"name" : "Global Ranking", "value" : 926},
       {"name" : "User Owns", "value" : 25},
       {"name" : "System Owns", "value" : 23},
     ],
