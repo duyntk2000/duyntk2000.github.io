@@ -41,8 +41,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/script/cybersous-chef/data-format.js",
-              "src/script/cybersous-chef/networking.js"
             ]
           },
           "configurations": {

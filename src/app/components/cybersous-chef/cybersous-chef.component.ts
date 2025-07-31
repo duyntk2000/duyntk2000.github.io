@@ -11,8 +11,8 @@ import {
 } from '@angular/cdk/drag-drop';
 import { Operation } from '../../operation';
 
-import * as data_format from "../../../script/cybersous-chef/data-format";
-import * as networking from "../../../script/cybersous-chef/networking";
+import * as data_format from "../../../script/cybersous-chef/data-format.mjs";
+import * as networking from "../../../script/cybersous-chef/networking.mjs";
 
 
 
@@ -32,9 +32,13 @@ export class CybersousChefComponent {
     { name: 'From Base64', action: (str: string) => data_format.from_base64(str)},
     { name: 'Reverse Text', action: (str: string) => data_format.reverse_str(str)},
     { name: 'Defang IP', action: (str: string) => networking.defang_ip(str)},
+    { name: 'Fang IP', action: (str: string) => networking.fang_ip(str)},
     { name: 'Defang URL', action: (str: string) => networking.defang_url(str)},
+    { name: 'Fang URL', action: (str: string) => networking.fang_url(str)},
     { name: 'To Hex', action: (str: string) => data_format.to_hex(str)},
     { name: 'From Hex', action: (str: string) => data_format.from_hex(str)},
+    { name: 'To Decimal', action: (str: string) => data_format.to_decimal(str)},
+    { name: 'From Decimal', action: (str: string) => data_format.from_decimal(str)},
   ];
 
   recipe: Operation[] = [
@@ -44,6 +48,7 @@ export class CybersousChefComponent {
 
   runOperation() {
     let tmp:string = this.inputText;
+    if (tmp.length === 0) {this.outputText = tmp; return;}
     this.recipe.forEach((op) => {
         tmp = op.action(tmp);
     });

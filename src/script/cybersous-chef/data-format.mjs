@@ -22,3 +22,16 @@ export function from_hex(str) {
     str = str.replaceAll(" ", "");
     return Buffer.from(str, 'hex').toString();
 }
+export function from_decimal(str) {
+    let dec = str.split(" ");
+    let ret = "";
+    dec.forEach((d) => ret += String.fromCharCode(d));
+    return ret;
+}
+export function to_decimal(str) {
+    let ret = str.charCodeAt(0).toString();
+    for (let i = 1; i<str.length; i++) {
+        ret = ret + " " + str.charCodeAt(i).toString();
+    }
+    return ret;
+}
