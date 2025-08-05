@@ -51,7 +51,7 @@ export class PortfolioComponent {
     "center" : [
       {"name" : "Jr Penetration Tester" , "value" : 100},
       {"name" : "Web Fundamentals" , "value" : 100},
-      {"name" : "Web Application Pentesting" , "value" : 89},
+      {"name" : "Web Application Pentesting" , "value" : 100},
       {"name" : "Red Teaming" , "value" : 2},
     ],
     "right" : [
