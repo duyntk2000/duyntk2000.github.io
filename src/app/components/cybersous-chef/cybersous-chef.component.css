@@ -1,8 +1,9 @@
 .cybersous-chef-container {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   font-family: monospace;
   --as-gutter-background-color: #16213E;
+  border-bottom: solid 10px #16213E;
 }
 .pane {
   flex: 1;
@@ -44,4 +45,17 @@
 
 h3 {
   margin: 10px;
+}
+
+footer {
+  margin-top: 4vh;
+  color:#F7F0F0;
+}
+
+a {
+  color: #F7F0F0;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #36F1CD!important;
 }
